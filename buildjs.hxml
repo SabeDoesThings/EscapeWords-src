@@ -1,0 +1,55 @@
+#--------------------------------------
+#
+# Heaps core libraries
+#
+#--------------------------------------
+-lib heaps
+
+#compile with hashlink
+#-lib hlsdl
+# -lib hldx
+# -lib hlopenal
+
+#compile with html5/js
+-js bin/js/game.js
+
+#--------------------------------------
+#
+# external libraries
+#
+#--------------------------------------
+
+#-lib
+-lib random
+
+#--------------------------------------
+#
+# code & game assets/resources
+#
+#--------------------------------------
+
+# main directory for code
+-cp src
+
+# additional directories
+-p res
+
+#--------------------------------------
+#
+# Output
+#
+#--------------------------------------
+
+-main Main
+
+#-hl bin/hl/game.hl
+
+#-D windowSize=400x300
+#-D windowSize=800x600
+#-D windowSize=1280x720
+#-D windowSize=1920x1080
+-D windowTitle=Escape Words
+#-D resourcesPath=assets ???
+#-D dce=full
+-D debug=true
+-D windowFixed=1
